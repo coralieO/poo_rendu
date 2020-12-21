@@ -1,0 +1,67 @@
+@import url(reset.css);
+@font-face{
+    src: url("font/FredokaOne-Regular.otf");
+    font-family: 'Fredoka_One';
+}
+/* version mobile */
+
+.dif-sondages{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.sondage .ti{
+    height: 3vh;
+    background-color: white;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    border: black solid 1px;
+    margin: 0 auto;
+    margin-top: 17px;
+}
+
+.v_sondage,.Vv_sondage,.Vvv_sondage{
+    padding-top: 20px;
+}
+
+.film,.Tl,.E {
+    padding-top: 15px;
+    margin: 0 auto;
+    width: 90%;
+    height: 20vh;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #00E6D6;
+}
+.F h2{
+    font-size: 1em;
+    font-weight: bold;
+}
+.FF{
+    padding-top: 15px;
+}
+.FF a{
+    color:#270ba1 ;
+    text-decoration: none;
+    cursor: pointer;
+}
+.FF a:hover{
+    color:#0d505c ;
+    font-size: 1.2em;
+    transition: 1s;
+}
+.FF li{
+    padding-top: 3px;
+}
+/* responsive tablette ordinateur */
+@media screen and (min-width: 600px ){
+nav{
+    text-align: center;
+}
+.pages_principales{
+    width: 95%;
+}
+}

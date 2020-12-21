@@ -1,0 +1,54 @@
+@import url(reset.css);
+@font-face{
+    src: url("font/FredokaOne-Regular.otf");
+    font-family: 'Fredoka_One';
+}
+/* version mobile */
+body{
+	background: linear-gradient(#21D7F3, #425BA2);
+	height: 100vh;
+	font-family: 'Fredoka_One';
+}
+main{
+	height: 100vh;
+}
+.form {
+	background-color: #00E6D6;
+    border-radius: 20px;
+    height: 60vh;
+    width: 75%;
+    margin: 0 auto;
+	transform: translate(0%,20%);
+	text-align: center;
+}
+form {
+    height: 45vh;
+    padding: 35px;
+}
+form h1{
+	text-align: center;
+	padding-bottom: 20px;
+}
+form div{
+	padding-bottom: 15px;
+	
+}
+form div input, button{
+	border-radius: 20px  ;
+	border: 1px black solid;
+	font-family: 'Fredoka_One';
+}
+button a{
+color: black;
+text-decoration: none;
+}
+
+/* responsive tablette ordinateur */
+@media screen and (min-width: 700px ){
+.form{
+    width: 30%;
+}
+form div{
+	padding-bottom: 45px;
+}
+}

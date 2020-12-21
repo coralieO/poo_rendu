@@ -1,0 +1,24 @@
+/* version mobile */
+.form {
+    height: 40vh;
+    transform: translate(0%, 65%);
+}
+form h1{
+    padding: 20px 0px 30px 0px;
+}
+form{
+    padding: 0px;
+    height: auto;
+}
+form div {
+    padding-bottom: 30px;
+}
+/* responsive tablette ordinateur */
+@media screen and (min-width: 600px ){
+    form h1{
+        padding: 30px 0px 30px 0px;
+    }
+    form div {
+        padding-bottom: 45px;
+    }
+}   
