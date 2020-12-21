@@ -1,12 +1,12 @@
 <?php
-	@$nom=$_POST["nom"];
+	@$nom=$_POST["nom"];//recuperation des valeurs des champs du formulaire
 	@$prenom=$_POST["prenom"];
 	@$mail=$_POST["mail"];
 	@$pass=$_POST["pass"];
 	@$repass=$_POST["repass"];
 	@$valider=$_POST["valider"];
 	$message="";
-	if(isset($valider)){
+	if(isset($valider)){//verification des champs
 		if(empty($nom)) $message="<li>Non invalide!</li>";
 		if(empty($prenom)) $message.="<li>Prénom invalide!</li>";
 		if(empty($mail)) $message.="<li>mail invalide!</li>";
@@ -21,7 +21,7 @@
 			if(count($tab)>0)
 				$message="<li>mail existe déjà!</li>";
 			else{
-				$ins=$pdo->prepare("insert into users(date,nom,prenom,mail,pass) values(now(),?,?,?,?)");
+				$ins=$pdo->prepare("insert into users(date,nom,prenom,mail,pass) values(now(),?,?,?,?)");//insertion des valeurs reçu
 				$ins->execute(array($nom,$prenom,$mail,md5($pass)));
 				header("location:login.php");
 			}
@@ -38,7 +38,7 @@
 			Inscription
 			<a href="login.php">Déja inscrit</a>
 		</header>
-		<form name="fo" method="post" action="" enctype="multipart/form-data">
+		<form name="fo" method="post" action="" enctype="multipart/form-data">/<!--formulaire d'inscription-->
 			<div class="label">Nom</div>
 			<input type="text" name="nom" value="<?php echo $nom?>" />
 			<div class="label">Prénom</div>

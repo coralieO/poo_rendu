@@ -8,7 +8,7 @@ $php_framework = array("Laravel", "CodeIgniter", "CakePHP", "Phalcon", "Symfony"
 
 $total_poll_row = get_total_rows($db);
 $output = '';
-if($total_poll_row > 0)
+if($total_poll_row > 0)//calcul des pourcentages
 {
 	foreach($php_framework as $row)
 	{

@@ -35,7 +35,7 @@ require_once('database_connection.php');
 <body>
 <?php include('menu.php')?>
     <main>
-    <Section id="formulaire">   <!--Formulaire d\'uplod d\'article -->
+    <Section id="formulaire">   <!--Formulaire d\'uplod de sondage -->
       <div class="formu">
       <form method=post  action="creation_de_sondage.php" >
       <h1>Créé votre sondage</h1> 

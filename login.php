@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	session_start();//recuperation des valeurs du formulaire
 	@$mail=$_POST["mail"];
 	@$pass=$_POST["pass"];
 	@$valider=$_POST["valider"];
@@ -29,7 +29,7 @@
 			Authentification
 			<a href="inscription.php">S'inscrire</a>
 		</header>
-		<form name="fo" method="post" action="">
+		<form name="fo" method="post" action=""><!--formulaire de connexio-->
 			<div class="label">Mail</div>
 			<input type="email" name="mail" value="<?php echo $mail?>" />
 			<div class="label">Mot de passe</div>
